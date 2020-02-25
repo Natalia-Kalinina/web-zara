@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat';
+    overflow: hidden;
+}
+section {
+    position: relative;
+    height: 100vh;
+    background: url(img/landscape_0.jpg) center / cover no-repeat;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+.hamburger {
+    transition: background-color 0.3s;
+    position: relative;
+    height: 25px;
+    width: 40px;
+    cursor: pointer;
+}
+.line-1 {
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 2px;
+    top: 0px;
+}
+.line-2 {
+    position: absolute;
+    background-color: #000000;
+    width: 70%;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.line-3 {
+    position: absolute;
+    background-color:#000;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+}
+.header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 30px;
+    align-items: center;
+    width: 100%;
+}
+.header:hover {
+    background-color: rgb(230, 226, 220, 0.3);
+}
+.header__logo {
+    display: block;
+    height: 80px;
+    width: 200px;
+    margin-left: 30px;
+    background: url(img/BBB.png) center / cover no-repeat; 
+}
+.header__search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+  }
+.header__search-link {
+    color:#000;
+    font-size: 18px;
+    margin-right: 5px;   
+    position: relative;
+}
+.header__search-strip {
+    position: relative;
+    display: block;
+    width: 100px;
+}
+.header__list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.header__item {
+    list-style-type: none;
+    margin-left: 40px;
+}
+.header__item:first-child {
+    margin-left: 0;
+}
+.header__search-strip::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    bottom: 0;
+    background-color: #000;
+}
+.content {
+    text-align: center;
+}
+.text-component {
+    color: #000;
+    font-weight: 700;
+}
+.title {
+    font-size: 50px;
+}
+.button {
+    display: block;
+    max-width: 130px;
+    border: 2px solid #000;
+    margin: 20px auto 10px;
+    padding: 8px 35px;
+}
